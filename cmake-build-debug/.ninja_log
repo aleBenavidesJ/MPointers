@@ -1,7 +1,21 @@
 # ninja log v6
-3	2276	1725069782712160097	CMakeFiles/MPointers.dir/main.cpp.o	b4d35c62e917748e
-2277	2473	1725069784986179692	MPointers	a17796f21f599f5b
-8	4425	1725069751516958717	CMakeFiles/MPointers.dir/MPointerGC.cpp.o	6c29cfe909adf7a7
-2	3009	1725069924297331469	CMakeFiles/MPointers.dir/main.cpp.o	29e216c28921ed7d
-4	3230	1725069924298331477	CMakeFiles/MPointers.dir/MPointerGC.cpp.o	3bc1db93888ff0
-3230	3494	1725069927525357135	MPointers	4ca5428b240d7fa9
+16	10535	1726228066908907191	CMakeFiles/MPointers.dir/main.cpp.o	9d6fdf7d7e124dde
+17293	20644	1726228084187115642	CMakeFiles/MPointerTests.dir/MPointerGC.cpp.o	3b7edd5ce4c36e76
+5	2981	1726233974152653564	CMakeFiles/MPointerTests.dir/tests/main.cpp.o	e88b969a429f49cc
+8	7933	1726232601204610061	CMakeFiles/MPointers.dir/tests/SortersTests.cpp.o	412356b5a942c5bb
+6	555	1726234063834656636	MPointerTests	304d5b397d683634
+10726	17293	1726228077626037037	CMakeFiles/MPointerTests.dir/tests/MPointerTest.cpp.o	ac3a6253910393b1
+2	63	1726234252858906398	build.ninja	ff741f538bbd1382
+3	6367	1726231911724343539	CMakeFiles/MPointers.dir/tests/MPointerGCTests.cpp.o	f62ead40a7fc7cf6
+5	7963	1726232601201610137	CMakeFiles/MPointers.dir/tests/DLLTests.cpp.o	cd9e3e1f7a8365
+7934	12136	1726232609130412732	CMakeFiles/MPointerTests.dir/tests/DLLTests.cpp.o	809bb4eb5d83d055
+4	6456	1726231911724343539	CMakeFiles/MPointerTests.dir/tests/MPointerGCTests.cpp.o	2d4db7b31b1c322
+10553	17310	1726228077449034907	CMakeFiles/MPointers.dir/tests/MPointerTest.cpp.o	6b0803899acffc00
+8	551	1726234029291645325	MPointers	b614f1819c90a163
+7963	12195	1726232609160412002	CMakeFiles/MPointerTests.dir/tests/SortersTests.cpp.o	837435000fc68068
+3	3188	1726233974150653565	CMakeFiles/MPointers.dir/tests/main.cpp.o	c4fb29d3b385736c
+19	10726	1726228066911907227	CMakeFiles/MPointers.dir/MPointerGC.cpp.o	3f16d47003249426
+17310	20537	1726228084202115821	CMakeFiles/MPointerTests.dir/main.cpp.o	e3c4e0b1e650a0b0
+4	7185	1726234415626320502	CMakeFiles/MPointerTests.dir/tests/main.cpp.o	e88b969a429f49cc
+6	4691	1726234475297507374	CMakeFiles/MPointerTests.dir/tests/main.cpp.o	e88b969a429f49cc
+4691	4941	1726234479982522732	MPointerTests	304d5b397d683634

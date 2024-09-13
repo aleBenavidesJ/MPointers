@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "MPointers",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "MPointerTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MPointerTests-Debug-326f01916c7e9652445d.json",
+					"name" : "MPointerTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "MPointers::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MPointers-Debug-a1ceb05673a0bfc8b221.json",
+					"jsonFile" : "target-MPointers-Debug-c91e485419e6a416673d.json",
 					"name" : "MPointers",
 					"projectIndex" : 0
 				}

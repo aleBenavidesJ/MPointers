@@ -1,0 +1,5 @@
+/home/alejandro/CLionProjects/MPointers/build/CMakeFiles/MPointers.dir
+/home/alejandro/CLionProjects/MPointers/build/CMakeFiles/MPointerTests.dir
+/home/alejandro/CLionProjects/MPointers/build/CMakeFiles/test.dir
+/home/alejandro/CLionProjects/MPointers/build/CMakeFiles/edit_cache.dir
+/home/alejandro/CLionProjects/MPointers/build/CMakeFiles/rebuild_cache.dir

@@ -51,15 +51,45 @@ build cmake_object_order_depends_target_MPointers: phony || .
 
 build CMakeFiles/MPointers.dir/main.cpp.o: CXX_COMPILER__MPointers_unscanned_Debug /home/alejandro/CLionProjects/MPointers/main.cpp || cmake_object_order_depends_target_MPointers
   DEP_FILE = CMakeFiles/MPointers.dir/main.cpp.o.d
-  FLAGS = -fsanitize=address -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
   OBJECT_DIR = CMakeFiles/MPointers.dir
   OBJECT_FILE_DIR = CMakeFiles/MPointers.dir
 
 build CMakeFiles/MPointers.dir/MPointerGC.cpp.o: CXX_COMPILER__MPointers_unscanned_Debug /home/alejandro/CLionProjects/MPointers/MPointerGC.cpp || cmake_object_order_depends_target_MPointers
   DEP_FILE = CMakeFiles/MPointers.dir/MPointerGC.cpp.o.d
-  FLAGS = -fsanitize=address -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
   OBJECT_DIR = CMakeFiles/MPointers.dir
   OBJECT_FILE_DIR = CMakeFiles/MPointers.dir
+
+build CMakeFiles/MPointers.dir/tests/MPointerTest.cpp.o: CXX_COMPILER__MPointers_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/MPointerTest.cpp || cmake_object_order_depends_target_MPointers
+  DEP_FILE = CMakeFiles/MPointers.dir/tests/MPointerTest.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointers.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointers.dir/tests
+
+build CMakeFiles/MPointers.dir/tests/MPointerGCTests.cpp.o: CXX_COMPILER__MPointers_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/MPointerGCTests.cpp || cmake_object_order_depends_target_MPointers
+  DEP_FILE = CMakeFiles/MPointers.dir/tests/MPointerGCTests.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointers.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointers.dir/tests
+
+build CMakeFiles/MPointers.dir/tests/DLLTests.cpp.o: CXX_COMPILER__MPointers_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/DLLTests.cpp || cmake_object_order_depends_target_MPointers
+  DEP_FILE = CMakeFiles/MPointers.dir/tests/DLLTests.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointers.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointers.dir/tests
+
+build CMakeFiles/MPointers.dir/tests/SortersTests.cpp.o: CXX_COMPILER__MPointers_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/SortersTests.cpp || cmake_object_order_depends_target_MPointers
+  DEP_FILE = CMakeFiles/MPointers.dir/tests/SortersTests.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointers.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointers.dir/tests
 
 
 # =============================================================================
@@ -69,13 +99,96 @@ build CMakeFiles/MPointers.dir/MPointerGC.cpp.o: CXX_COMPILER__MPointers_unscann
 #############################################
 # Link the executable MPointers
 
-build MPointers: CXX_EXECUTABLE_LINKER__MPointers_Debug CMakeFiles/MPointers.dir/main.cpp.o CMakeFiles/MPointers.dir/MPointerGC.cpp.o
-  FLAGS = -fsanitize=address -g
+build MPointers: CXX_EXECUTABLE_LINKER__MPointers_Debug CMakeFiles/MPointers.dir/main.cpp.o CMakeFiles/MPointers.dir/MPointerGC.cpp.o CMakeFiles/MPointers.dir/tests/MPointerTest.cpp.o CMakeFiles/MPointers.dir/tests/MPointerGCTests.cpp.o CMakeFiles/MPointers.dir/tests/DLLTests.cpp.o CMakeFiles/MPointers.dir/tests/SortersTests.cpp.o
+  FLAGS = -fsanitize=address -march=native -mtune=native -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/alejandro/local/lib  -lgtest  -lgmock  -lgtest_main  -lgmock_main
+  LINK_PATH = -L/home/alejandro/local/lib
   OBJECT_DIR = CMakeFiles/MPointers.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = MPointers
   TARGET_PDB = MPointers.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target MPointerTests
+
+
+#############################################
+# Order-only phony target for MPointerTests
+
+build cmake_object_order_depends_target_MPointerTests: phony || .
+
+build CMakeFiles/MPointerTests.dir/tests/MPointerTest.cpp.o: CXX_COMPILER__MPointerTests_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/MPointerTest.cpp || cmake_object_order_depends_target_MPointerTests
+  DEP_FILE = CMakeFiles/MPointerTests.dir/tests/MPointerTest.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointerTests.dir/tests
+
+build CMakeFiles/MPointerTests.dir/MPointerGC.cpp.o: CXX_COMPILER__MPointerTests_unscanned_Debug /home/alejandro/CLionProjects/MPointers/MPointerGC.cpp || cmake_object_order_depends_target_MPointerTests
+  DEP_FILE = CMakeFiles/MPointerTests.dir/MPointerGC.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointerTests.dir
+
+build CMakeFiles/MPointerTests.dir/tests/MPointerGCTests.cpp.o: CXX_COMPILER__MPointerTests_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/MPointerGCTests.cpp || cmake_object_order_depends_target_MPointerTests
+  DEP_FILE = CMakeFiles/MPointerTests.dir/tests/MPointerGCTests.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointerTests.dir/tests
+
+build CMakeFiles/MPointerTests.dir/tests/DLLTests.cpp.o: CXX_COMPILER__MPointerTests_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/DLLTests.cpp || cmake_object_order_depends_target_MPointerTests
+  DEP_FILE = CMakeFiles/MPointerTests.dir/tests/DLLTests.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointerTests.dir/tests
+
+build CMakeFiles/MPointerTests.dir/tests/SortersTests.cpp.o: CXX_COMPILER__MPointerTests_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/SortersTests.cpp || cmake_object_order_depends_target_MPointerTests
+  DEP_FILE = CMakeFiles/MPointerTests.dir/tests/SortersTests.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointerTests.dir/tests
+
+build CMakeFiles/MPointerTests.dir/tests/main.cpp.o: CXX_COMPILER__MPointerTests_unscanned_Debug /home/alejandro/CLionProjects/MPointers/tests/main.cpp || cmake_object_order_depends_target_MPointerTests
+  DEP_FILE = CMakeFiles/MPointerTests.dir/tests/main.cpp.o.d
+  FLAGS = -fsanitize=address -march=native -mtune=native -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -I/home/alejandro/local/include -I/home/alejandro/CLionProjects/MPointers
+  OBJECT_DIR = CMakeFiles/MPointerTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/MPointerTests.dir/tests
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target MPointerTests
+
+
+#############################################
+# Link the executable MPointerTests
+
+build MPointerTests: CXX_EXECUTABLE_LINKER__MPointerTests_Debug CMakeFiles/MPointerTests.dir/tests/MPointerTest.cpp.o CMakeFiles/MPointerTests.dir/MPointerGC.cpp.o CMakeFiles/MPointerTests.dir/tests/MPointerGCTests.cpp.o CMakeFiles/MPointerTests.dir/tests/DLLTests.cpp.o CMakeFiles/MPointerTests.dir/tests/SortersTests.cpp.o CMakeFiles/MPointerTests.dir/tests/main.cpp.o
+  FLAGS = -fsanitize=address -march=native -mtune=native -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/alejandro/local/lib  -lgtest  -lgmock  -lgtest_main  -lgmock_main
+  LINK_PATH = -L/home/alejandro/local/lib
+  OBJECT_DIR = CMakeFiles/MPointerTests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = MPointerTests
+  TARGET_PDB = MPointerTests.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alejandro/CLionProjects/MPointers/cmake-build-debug && /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
 
 
 #############################################
@@ -111,7 +224,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/alejandro/CLionProjects/MPointers/cmake-build-debug
 
-build all: phony MPointers
+build all: phony MPointers MPointerTests
 
 # =============================================================================
 # Built-in targets
@@ -120,14 +233,14 @@ build all: phony MPointers
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/alejandro/CLionProjects/MPointers/CMakeLists.txt /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/alejandro/CLionProjects/MPointers/CMakeLists.txt /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/alejandro/CLionProjects/MPointers/CMakeLists.txt /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build /home/alejandro/CLionProjects/MPointers/CMakeLists.txt /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckIncludeFile.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/CheckLibraryExists.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/FindThreads.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/Linux.cmake /home/alejandro/Descargas/clion-2024.2.0.1/bin/cmake/linux/x64/share/cmake-3.29/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
 
 
 #############################################

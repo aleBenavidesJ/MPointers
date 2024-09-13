@@ -1,3 +1,76 @@
-Start testing: Aug 30 20:05 CST
+Start testing: Sep 13 07:34 CST
 ----------------------------------------------------------
-End testing: Aug 30 20:05 CST
+1/1 Testing: MPointerTests
+1/1 Test: MPointerTests
+Command: "/home/alejandro/CLionProjects/MPointers/cmake-build-debug/MPointerTests"
+Directory: /home/alejandro/CLionProjects/MPointers/cmake-build-debug
+"MPointerTests" start time: Sep 13 07:34 CST
+Output:
+----------------------------------------------------------
+[==========] Running 28 tests from 4 test suites.
+[----------] Global test environment set-up.
+[----------] 11 tests from MPointerTest
+[ RUN      ] MPointerTest.DefaultConstructor
+/home/alejandro/CLionProjects/MPointers/tests/MPointerTest.cpp:15: Failure
+Expected equality of these values:
+  ptr.getID()
+    Which is: 0
+  1
+
+[  FAILED  ] MPointerTest.DefaultConstructor (0 ms)
+[ RUN      ] MPointerTest.NullptrConstructor
+/home/alejandro/CLionProjects/MPointers/tests/MPointerTest.cpp:22: Failure
+Expected equality of these values:
+  ptr.getID()
+    Which is: 1
+  2
+
+[  FAILED  ] MPointerTest.NullptrConstructor (0 ms)
+[ RUN      ] MPointerTest.NewMethod
+MPointer con ID: 2 ha sido destruido
+[       OK ] MPointerTest.NewMethod (0 ms)
+[ RUN      ] MPointerTest.DereferenceAndAccess
+MPointer con ID: 3 ha sido destruido
+[       OK ] MPointerTest.DereferenceAndAccess (0 ms)
+[ RUN      ] MPointerTest.CopyConstructor
+MPointer con ID: 4 ha sido destruido
+[       OK ] MPointerTest.CopyConstructor (2 ms)
+[ RUN      ] MPointerTest.CopyAssignment
+MPointer con ID: 5 ha sido destruido
+[       OK ] MPointerTest.CopyAssignment (0 ms)
+[ RUN      ] MPointerTest.AssignmentOperator
+MPointer con ID: 7 ha sido destruido
+[       OK ] MPointerTest.AssignmentOperator (0 ms)
+[ RUN      ] MPointerTest.ComparisonOperators
+/home/alejandro/CLionProjects/MPointers/tests/MPointerTest.cpp:79: Failure
+Value of: ptr1 != ptr2
+  Actual: true
+Expected: false
+
+MPointer con ID: 9 ha sido destruido
+MPointer con ID: 8 ha sido destruido
+[  FAILED  ] MPointerTest.ComparisonOperators (0 ms)
+[ RUN      ] MPointerTest.PointerOperators
+MPointer con ID: 10 ha sido destruido
+[       OK ] MPointerTest.PointerOperators (0 ms)
+[ RUN      ] MPointerTest.PrintPtr
+MPointer con ID: 11 ha sido destruido
+[       OK ] MPointerTest.PrintPtr (0 ms)
+[ RUN      ] MPointerTest.Destructor
+MPointer con ID: 12 ha sido destruido
+[       OK ] MPointerTest.Destructor (0 ms)
+[----------] 11 tests from MPointerTest (3 ms total)
+
+[----------] 6 tests from MPointerGCTests
+[ RUN      ] MPointerGCTests.GetInstance
+[       OK ] MPointerGCTests.GetInstance (1 ms)
+[ RUN      ] MPointerGCTests.GenerateID
+<end of output>
+Test time =   0.37 sec
+----------------------------------------------------------
+Test Failed.
+"MPointerTests" end time: Sep 13 07:34 CST
+"MPointerTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 13 07:34 CST
